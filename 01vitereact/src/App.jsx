@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Chai/>
-      <p>Hnji... Titti</p>
+      <p>Hnji...</p>
       <h1>Chalo ab next video lecture pe badhe {user}</h1>
     </>
   )
