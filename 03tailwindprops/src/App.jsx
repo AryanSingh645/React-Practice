@@ -5,11 +5,12 @@ import './App.css'
 import Card from './components/Card'
 
 function App() {
+  const myName = 'aryan';
 
   return (
     <>
       <h1 className='bg-green-400 rounded-lg mb-4'>Tailwind css</h1>
-      <Card userName = "aryan" btntext='Click Me'/>
+      <Card userName = {myName} btntext='Click Me'/>
       <Card userName = "deepak"/>
     </>
   )
