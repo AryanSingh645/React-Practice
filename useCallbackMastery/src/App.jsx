@@ -11,9 +11,10 @@ function App() {
     return [number, number + 1, number + 2];
   },[number]);
   // const getItems = useCallback(() => {
-  //   console.log('getItems function called');
-  //   return [number, number + 1, number + 2];
-  // },[number]);
+  //     console.log('getItems function called');
+  //     return [number, number + 1, number + 2];
+  //   },[number]);
+    console.log(typeof getItems);
 
   return (
     <>

@@ -1,0 +1,47 @@
+/* #meddit{
+    /* fill: none; */
+    /* animation: filling 1.5s linear forwards 3s; */
+
+.stroke-animation{
+    fill: none ;
+    stroke: #00bf63;
+    stroke-width: 2;
+    stroke: 2;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: anim-line 1.5s linear forwards;
+}
+.fill-animation{
+    fill: none ;
+    stroke: #00bf63;
+    stroke-width: 2;
+    stroke: 2;
+    animation: filling 1s linear forwards;
+}
+
+#meddit-text{
+    opacity: 0;
+    animation: leftCome 1s linear forwards 2.5s;
+}
+
+@keyframes leftCome {
+    to{
+       opacity: 100;
+    }
+    
+}
+
+@keyframes anim-line {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes filling {
+    0%{
+        fill: transparent;;
+    }
+    100%{
+        fill: #00bf63;
+    }
+}

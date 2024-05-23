@@ -10,10 +10,10 @@ function App() {
   }
   // const [count, setCount] = useState(() => initialvalue()) // executes only once
   // const [count, setCount] = useState(initialvalue()) // executes at every render
-  const [count, setCount] = useState(() => {  // executes only once
-    console.log("Executed");
-    return 4;
-  })
+  // const [count, setCount] = useState(() => {  // executes only once
+  //   console.log("Executed");
+  //   return 4;
+  // })
   const increment = () => {
     setCount(prevCount => prevCount + 1);
   }
@@ -26,6 +26,7 @@ function App() {
   useEffect(() => {
     console.log("UseEffect called");
   },[count]);
+  // useEffect(() => {},[])
 
   return (
     <>

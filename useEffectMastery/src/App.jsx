@@ -31,17 +31,21 @@ function App() {
   //   }
   // })
   console.log('outside useEffect');
+  let dataSet = 0;
   useEffect(() => {
-    console.log('resized');
+    dataSet += 1;
+    console.log('dataSet', dataSet);
+    setSize(dataSet);
     window.addEventListener('resize',function handlesize(){
-      setSize(window.innerWidth);
+      // setSize(window.innerWidth);
       console.log('handlesize function called');
     });
+    console.log('resized');
     // //clean up function
     return () => {
       console.log('cleanup function called');
     }
-  },[])
+  },[size])
  
 
   return (
